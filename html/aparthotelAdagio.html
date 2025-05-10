@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aparthotel Adagio Glasgow Central</title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Aparthotel Adagio Glasgow Central </h1>
+  </div>
+</header>
+
+<div class = "page-container">
+  <h1 class = "page-title"> Aparthotel Adagio Glasgow Central </h1>
+  <div class = "hotel-content">
+
+    <!--images (top left) -->
+    <div class = "image-container">
+      <button class="arrow-button left" onclick="changeMainImage(-1)">&#10094;</button>
+      <img id="mainImage" src="../images/hotelImages/hotel1-1.jpg" alt="Hotel Image">
+      <button class="arrow-button right" onclick="changeMainImage(1)">&#10095;</button>
+    </div>
+
+    <!-- information (top right)-->
+    <div class = "info-container">
+      <h2> Information </h2>
+      <!-- Information from https://www.adagio-city.com -->
+      <p> Put the best of Glasgow on your doorstep by booking a stay at the four-star  Glasgow aparthotel. You’ll be just a short walk from public transport with parking available nearby at our central hotel in Glasgow. This family-friendly aparthotel is one of the highest-rated accommodation options for kids in Glasgow with hotel-worthy extras.  </p>
+      <h3> Facilities </h3>
+      <ul>
+        <li> Car Park (additional charge)</li>
+        <li> Pets Welcome (additional charge)</li>
+        <li> Wheelchair accessible </li>
+        <li> Wifi </li>
+        <li> Fitness center </li>
+        <li> Air conditioning</li>
+      </ul>
+    </div>
+
+      <!-- opening times (top right)-->
+    <div class = "table-container">
+      <table class = "hotel-information">
+        <tr>
+          <th> Room Type </th>
+          <th> Price </th>
+        </tr>
+        <tr>
+          <td> Single </td>
+          <td> £132 per night </td>
+        </tr>
+        <tr>
+          <td> Double </td>
+          <td> £132 per night </td>
+        </tr>
+        <tr>
+          <td> Family </td>
+          <td> £198 per night  </td>
+        </tr>
+        <tr>
+          <td> Suite </td>
+          <td> £166 per night </td>
+        </tr>
+      </table>
+    </div>
+
+    <!--map and button (bottom right) -->
+    <div class = "icons-container">
+      <!-- Map Image -->
+      <img src = "../images/hotelImages/map-aparthotelAdagio.jpg" alt = "Map Location" class = "map-icon">
+
+      <!--Review Button -->
+      <a href="hotelBooking.html" class = "book-button"> Book Now! </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

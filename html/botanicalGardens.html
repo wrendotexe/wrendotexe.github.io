@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Gardens </title>
+    <link rel="stylesheet" href="../css/base-styles.css">
+  </head>
+
+  <body>
+    <div id = "menu-container"></div>
+    <script src="../js/scripts.js"></script>
+    <script>
+      createDropdownMenu()
+    </script>
+
+    <header class = "top-bar">
+      <div class = "top-bar-left">
+        <button class = "back-button" onclick="goBack()"> Back </button>
+        <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+        <h1> Botanical Gardens </h1>
+      </div>
+    </header>
+
+
+    <div class = "page-container">
+      <h1 class = "page-title"> Botanical Gardens </h1>
+      <div class = "attraction-content">
+
+        <!--images (top left) -->
+        <div class = "image-container">
+          <button class="arrow-button left" onclick="changeMainImage(-1)">&#10094;</button>
+          <img id="mainImage" src="../images/attractionImages/attraction1-1.jpg" alt="Attraction Image">
+          <button class="arrow-button right" onclick="changeMainImage(1)">&#10095;</button>
+        </div>
+
+        <!--info section (top right) -->
+        <div class = "info-container">
+          <p> We would love to welcome you to Glasgow Botanic Gardens. There is so much to see and a lot to learn here. We are very interested in plants and exploring the fascinating ways that they grow and how they affect our planet. Life on Earth cannot survive without plants and botanic gardens have a leading role to play in focusing on the importance of saving our World through protecting, and valuing plants and their habitats across the globe. The destruction of plant habitats on a large scale had led to climate change and by exploring the plants growing here you will begin to have an appreciation of the vast diversity of plant life even though we can only provide a snapshot of the massive extent of life on our planet. </p>
+          <p> Many of our visitors think on us as a park but a botanic garden is much more than a park and we would ask you to think on us as the Gardens. As a botanic garden we look after a collection of over 9000 different plants with the greatest number growing in the temperate and tropical glasshouses. Outdoors we have a growing representation of hardy trees - these are well worth exploring. In addition to our stunning Victorian glasshouses, we have over 20 hectares of landscaped grounds to explore much it along the beautiful River Kelvin.</p>
+        </div>
+
+        <!--opening times (bottom left) -->
+        <div class = "table-container">
+          <table class = "opening-times">
+            <tr>
+              <th> Day </th>
+              <th> Opening Hours </th>
+            </tr>
+            <tr>
+              <td> Monday </td>
+              <td> 9:00am - 5:00pm </td>
+            </tr>
+            <tr>
+              <td> Tuesday </td>
+              <td> 9:00am - 5:00pm </td>
+            </tr>
+            <tr>
+              <td> Wednesday </td>
+              <td> 9:00am - 5:00pm </td>
+            </tr>
+            <tr>
+              <td> Thursday </td>
+              <td> 9:00am - 5:00pm </td>
+            </tr>
+            <tr>
+              <td> Friday </td>
+              <td> 9:00am - 6:00pm </td>
+            </tr>
+            <tr>
+              <td> Saturday </td>
+              <td> 9:00am - 6:00pm </td>
+            </tr>
+            <tr>
+              <td> Sunday </td>
+              <td> 10:00am - 4:00pm </td>
+            </tr>
+          </table>
+        </div>
+
+
+        <!--map and button (bottom right) -->
+        <div class = "icons-container">
+          <!-- Map Image -->
+          <img src = "../images/attractionImages/map-botanicgardens.jpg" alt = "Map Location" class = "map-icon">
+
+          <!--Review Button -->
+            <a href="botanicalGardensReviews.html" class = "review-button"> Been here? Review now! </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

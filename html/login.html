@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Login </title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Log In! </h1>
+  </div>
+</header>
+
+
+<div class = "login-container">
+  <h2> Login </h2>
+  <input type = "text" id = "username" placeholder="Enter Username">
+  <input type = "password" id = "password" placeholder="Enter Password">
+  <button onclick="login()"> Login </button>
+  <p id = "message"></p>
+
+  <p> Don't have an account? <a href = '../html/signup.html'> Sign up </a> here! </p>
+</div>
+</body>
+</html>

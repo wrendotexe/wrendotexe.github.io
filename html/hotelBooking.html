@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking</title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Hotels Booking </h1>
+  </div>
+</header>
+
+<div class="bookingContainer">
+
+  <div class = "bookingContainerLeft">
+    <label for = "name"> Name: </label>
+    <input type = "text" id = "name" placeholder="Enter your name">
+
+    <label for = "hotelName"> Hotel Name </label>
+    <select id = "hotelName">
+      <option value = "Aparthotel Adagio Glasgow Central"> Aparthotel Adagio Glasgow Central </option>
+      <option value = "Piccolo Hotel Glasgow"> Piccolo Hotel Glasgow </option>
+      <option value = "Mercure Glasgow City Hotel"> Mercure Glasgow City Hotel </option>
+      <option value = "The Z Hotel Glasgow"> The Z Hotel Glasgow </option>
+      <option value = "Maldron Hotel Glasgow"> Maldron Hotel Glasgow </option>
+      <option value = "Voco Grand Central Glasgow"> Voco Grand Central Glasgow </option>
+      <option value = "AC Marriott Glasgow"> AC Marriott Glasgow </option>
+      <option value = "Boutique 50"> Boutique 50 </option>
+    </select>
+
+    <label for = "startDate"> Start Date: </label>
+    <input type = "date" id = "startDate">
+
+    <label for = "endDate"> End Date: </label>
+    <input type = "date" id = "endDate">
+  </div>
+
+  <div class = "bookingContainerRight">
+    <label for = "roomType"> Room Type </label>
+    <select id = "roomType">
+      <option value = "Single"> Single </option>
+      <option value = "Double"> Double </option>
+      <option value = "Family"> Family </option>
+      <option value = "Suite"> Suite </option>
+    </select>
+
+    <label for = "adults"> Number of Persons: </label>
+    <div class = "persons-container">
+      <input type = "number" id = "adults" name = "adults" placeholder="Adults" min = "1">
+      <input type = "number" id = "children" name = "children" placeholder="Children" min = "0">
+    </div>
+
+    <label for = "billingInfo"> Billing Information: </label>
+    <input type="text" id = billingInfo name = "billingInfo" placeholder="Enter billing address">
+
+  </div>
+</div>
+
+<button class = "reviewBookingButton" onclick="reviewBooking()"> Review Booking </button>
+
+<div id = "reviewBookingSection" style = "display: none;">
+  <h3> Booking Summary </h3>
+  <p><strong>Name:</strong> <span id="reviewName"></span></p>
+  <p><strong>Start Date:</strong> <span id="reviewStartDate"></span></p>
+  <p><strong>End Date:</strong> <span id="reviewEndDate"></span></p>
+  <p><strong>Room Type:</strong> <span id="reviewHotelName"></span></p>
+  <p><strong>Room Type:</strong> <span id="reviewRoomType"></span></p>
+  <p><strong>Adults:</strong> <span id="reviewAdults"></span></p>
+  <p><strong>Children:</strong> <span id="reviewChildren"></span></p>
+  <p><strong>Billing Information:</strong> <span id="reviewBilling"></span></p>
+
+  <button id = "confirmBookingButton" onclick="confirmBooking()"> Confirm Booking</button>
+</div>
+
+<div id = "confirmationMessage" style = "display: none;">
+  <h3> Booking Confirmed! </h3>
+  <p> Your booking has been successfully confirmed </p>
+  <button id = "goToProfileButton" onclick="window.location.href = 'userProfile.html'"> Go to Profile </button>
+</div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels</title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Hotels </h1>
+  </div>
+</header>
+
+<div class = "filter-container">
+  <label for = "hotelFilter"> Filter by: </label>
+  <select id = "hotelFilter" onchange="filterHotels()">
+    <option value = "all"> All </option>
+    <option value = "budget"> Budget </option>
+    <option value = "luxury"> Luxury </option>
+    <option value = "business"> Business </option>
+  </select>
+</div>
+
+<p class = "placeholderInfo"> (For prototypes sake, the Aparthotel Adagio page is the only populated one) </p>
+
+<div class = "hotels-container">
+  <!-- First Row -->
+  <div class = "hotel-row">
+    <div class = "hotel-block" data-category = "business">
+      <button class = "prev" onclick="prevHotelImage(0)"> &#10094 </button>
+      <a href="aparthotelAdagio.html">
+        <img id = "image0" src = "../images/hotelImages/hotel1-1.jpg" alt = "Hotel 1">
+      </a>
+      <button class = "next" onclick="nextHotelImage(0)"> &#10095 </button>
+      <p> Aparthotel Adagio Glasgow Central </p>
+    </div>
+
+    <div class = "hotel-block" data-category="budget">
+      <button class = "prev" onclick="prevHotelImage(1)"> &#10094 </button>
+        <img id = "image1" src = "../images/hotelImages/hotel2-1.jpg" alt = "Hotel 2">
+        <button class = "next" onclick="nextHotelImage(1)"> &#10095 </button>
+        <p> Piccolo Hotel Glasgow </p>
+    </div>
+
+      <div class = "hotel-block" data-category="luxury">
+        <button class = "prev" onclick="prevHotelImage(2)"> &#10094 </button>
+        <img id = "image2" src = "../images/hotelImages/hotel3-1.jpg" alt = "Hotel 3">
+        <button class = "next" onclick="nextHotelImage(2)"> &#10095 </button>
+        <p> Mercure Glasgow City Hotel </p>
+      </div>
+
+      <div class = "hotel-block" data-category="budget">
+        <button class = "prev" onclick="prevHotelImage(3)"> &#10094 </button>
+        <img id = "image3" src = "../images/hotelImages/hotel4-1.jpg" alt = "Hotel 4">
+        <button class = "next" onclick="nextHotelImage(3)"> &#10095 </button>
+        <p> The Z Hotel Glasgow </p>
+      </div>
+    </div>
+
+  <!--Second Row -->
+  <div class = "hotel-row">
+    <div class = "hotel-block" data-category = "business">
+      <button class = "prev" onclick="prevHotelImage(4)"> &#10094 </button>
+      <a href="#">
+        <img id = "image4" src = "../images/hotelImages/hotel5-1.jpg" alt = "Hotel 5">
+      </a>
+      <button class = "next" onclick="nextHotelImage(4)"> &#10095 </button>
+      <p> Maldron Hotel Glasgow </p>
+    </div>
+
+    <div class = "hotel-block" data-category="luxury">
+      <button class = "prev" onclick="prevHotelImage(5)"> &#10094 </button>
+      <img id = "image5" src = "../images/hotelImages/hotel6-1.jpg" alt = "Hotel 6">
+      <button class = "next" onclick="nextHotelImage(5)"> &#10095 </button>
+      <p> Voco Grand Central Glasgow </p>
+    </div>
+
+    <div class = "hotel-block" data-category="business">
+      <button class = "prev" onclick="prevHotelImage(6)"> &#10094 </button>
+      <img id = "image6" src = "../images/hotelImages/hotel7-1.jpg" alt = "Hotel 7">
+      <button class = "next" onclick="nextHotelImage(6)"> &#10095 </button>
+      <p> AC Marriott Glasgow </p>
+    </div>
+
+    <div class = "hotel-block" data-category="luxury">
+      <button class = "prev" onclick="prevHotelImage(7)"> &#10094 </button>
+      <img id = "image7" src = "../images/hotelImages/hotel8-1.jpg" alt = "Hotel 8">
+      <button class = "next" onclick="nextHotelImage(7)"> &#10095 </button>
+      <p> Boutique 50 </p>
+    </div>
+  </div>
+  </div>
+</body>
+</html>

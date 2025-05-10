@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Your Profile </h1>
+  </div>
+</header>
+
+<div class = "profileContainer">
+  <h1> User Profile </h1>
+  <div class = "userTabs">
+    <button class = "tab-button" onclick="showTab('reviews')"> Reviews</button>
+    <button class = "tab-button" onclick="showTab('bookings')"> Current Bookings </button>
+    <button class = "tab-button" onclick="showTab('info')"> User Profile </button>
+  </div>
+  <div class = "tab-content" id = "reviews"> Reviews content here ... </div>
+  <div class = "tab-content" id = "bookings"> Current bookings content here ...</div>
+  <div class = "tab-content" id = "info"> User information content here ...</div>
+</div>
+
+
+</body>
+</html>

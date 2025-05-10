@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Botanical Gardens Reviews</title>
+  <link rel="stylesheet" href="../css/base-styles.css">
+</head>
+
+<body>
+<div id = "menu-container"></div>
+<script src="../js/scripts.js"></script>
+<script>
+  createDropdownMenu()
+</script>
+
+<header class = "top-bar">
+  <div class = "top-bar-left">
+    <button class = "back-button" onclick="goBack()"> Back </button>
+    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <h1> Botanical Gardens Reviews </h1>
+  </div>
+</header>
+
+<a href="writeReview.html" class = "review-button"> Been here? Review now! </a>
+
+<div id = "reviewsContainer"> </div>
+
+<script>
+  window.onload = function (){
+    const reviews = JSON.parse(sessionStorage.getItem("reviews")) || [];
+
+    console.log("Retrieved Reviews: ", reviews);
+
+    let reviewsContainer = document.getElementById("reviewsContainer")
+
+    if (reviews.length > 0) {
+      reviewsContainer.innerHTML = reviews.map(review => `
+        <div class = "review">
+            <h2> Review by ${review.name} </h2>
+            <p><strong> Date Visited: </strong> ${review.date} </p>
+            <p>${review.review}</p>
+            <p><strong> Rating: </strong> ${review.rating} / 5</p>
+        </div>
+      `).join("");
+    }else{
+      reviewsContainer.innerHTML = "<p> No Reviews Available</p>"
+    }
+  };
+</script>
+</body>
+</html>
