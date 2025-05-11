@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" href="../css/base-styles.css">
+  <link rel="stylesheet" href="base-styles.css">
 </head>
 <body id = "index">
   <div id = "menu-container"></div>
-  <script src="../js/scripts.js"></script>
+  <script src="scripts.js"></script>
 
 
 <header class = "top-bar">
   <div class = "top-bar-left">
-    <img src = "../images/homePageImages/glasgowCoatOfArms.png" alt = "Glasgow Crest">
+    <img src = "glasgowCoatOfArms.png" alt = "Glasgow Crest">
     <h1> Welcome to Glasgow! </h1>
   </div>
   <nav class = "top-bar-right">
@@ -29,16 +29,16 @@
 
 <div class = "banner">
   <div class = "banner-images">
-    <a href = "botanicalGardens.html"><img src = "../images/attractionImages/attraction1-1.jpg" alt = "Botanical Gardens" data-title = "Botanical Gardens"> </a>
-    <a href = "#"> <img src = "../images/attractionImages/attraction2-1.jpg" alt = " Kelvingrove Art Gallery and Museum" data-title = " Kelvingrove Art Gallery and Museum"> </a>
-    <a href = "#"> <img src = "../images/attractionImages/attraction3-1.jpg" alt = " Glasgow Cathedral " data-title = " Glasgow Cathedral "> </a>
+    <a href = "botanicalGardens.html"><img src = "attraction1-1.jpg" alt = "Botanical Gardens" data-title = "Botanical Gardens"> </a>
+    <a href = "#"> <img src = "attraction2-1.jpg" alt = " Kelvingrove Art Gallery and Museum" data-title = " Kelvingrove Art Gallery and Museum"> </a>
+    <a href = "#"> <img src = "attraction3-1.jpg" alt = " Glasgow Cathedral " data-title = " Glasgow Cathedral "> </a>
   </div>
   <div class = "banner-title"></div>
 </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    if (document.body.id === "homepage"){
+    if (document.body.id === "index"){
       initializeScrollingBanner();
     }
   });

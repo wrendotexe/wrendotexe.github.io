@@ -14,9 +14,9 @@ function createDropdownMenu(){
         <button class = "dropbtn"> Menu </button>
         <div class = "dropdown-content">
             <a href = 'index.html'> Home </a>
-            <a href = '../html/attractions.html'> Attractions </a>
-            <a href = '../html/hotels.html'> Hotels </a>
-            <a href = '../html/weather.html'> Weather </a>
+            <a href = 'attractions.html'> Attractions </a>
+            <a href = 'hotels.html'> Hotels </a>
+            <a href = 'weather.html'> Weather </a>
             <a href = '#' id = "profileLink"> Profile </a>
         </div>
     </div>
@@ -54,7 +54,7 @@ function createDropdownMenu(){
     if (!user){
       showLoginPopup();
     } else {
-      window.location.href =  "../html/userProfile.html";
+      window.location.href =  "userProfile.html";
     }
   });
   console.log("Dropdown menu successfully initialized!");
@@ -109,14 +109,14 @@ function initializeScrollingBanner(){
 //attractions list
 
 const attractionImages = [
-  ["../images/attractionImages/attraction1-1.jpg", "../images/attractionImages/attraction1-2.jpg", "../images/attractionImages/attraction1-3.jpg"],
-  ["../images/attractionImages/attraction2-1.jpg", "../images/attractionImages/attraction2-2.jpg", "../images/attractionImages/attraction2-3.jpg"],
-  ["../images/attractionImages/attraction3-1.jpg", "../images/attractionImages/attraction3-2.jpg", "../images/attractionImages/attraction3-3.jpg"],
-  ["../images/attractionImages/attraction4-1.jpg", "../images/attractionImages/attraction4-2.jpg", "../images/attractionImages/attraction4-3.jpg"],
-  ["../images/attractionImages/attraction5-1.jpg", "../images/attractionImages/attraction5-2.jpg", "../images/attractionImages/attraction5-3.jpg"],
-  ["../images/attractionImages/attraction6-1.jpg", "../images/attractionImages/attraction6-2.jpg", "../images/attractionImages/attraction6-3.jpg"],
-  ["../images/attractionImages/attraction7-1.jpg", "../images/attractionImages/attraction7-2.jpg", "../images/attractionImages/attraction7-3.jpg"],
-  ["../images/attractionImages/attraction8-1.jpg", "../images/attractionImages/attraction8-2.jpg", "../images/attractionImages/attraction8-3.jpg"]
+  ["attraction1-1.jpg", "attraction1-2.jpg", "/attraction1-3.jpg"],
+  ["attraction2-1.jpg", "attraction2-2.jpg", "attraction2-3.jpg"],
+  ["attraction3-1.jpg", "attraction3-2.jpg", "attraction3-3.jpg"],
+  ["attraction4-1.jpg", "attraction4-2.jpg", "attraction4-3.jpg"],
+  ["attraction5-1.jpg", "attraction5-2.jpg", "attraction5-3.jpg"],
+  ["attraction6-1.jpg", "attraction6-2.jpg", "attraction6-3.jpg"],
+  ["attraction7-1.jpg", "attraction7-2.jpg", "attraction7-3.jpg"],
+  ["attraction8-1.jpg", "attraction8-2.jpg", "attraction8-3.jpg"]
 ];
 
 let currentAttractionIndices  = new Array(attractionImages.length).fill(0);
@@ -149,14 +149,14 @@ function updateAttractionImage(index){
 //individual image scrolling
 
 const images = [
-  "../images/attractionImages/attraction1-1.jpg", "../images/attractionImages/attraction1-2.jpg", "../images/attractionImages/attraction1-3.jpg",
-  "../images/attractionImages/attraction2-1.jpg", "../images/attractionImages/attraction2-2.jpg", "../images/attractionImages/attraction2-3.jpg",
-  "../images/attractionImages/attraction3-1.jpg", "../images/attractionImages/attraction3-2.jpg", "../images/attractionImages/attraction3-3.jpg",
-  "../images/attractionImages/attraction4-1.jpg", "../images/attractionImages/attraction4-2.jpg", "../images/attractionImages/attraction4-3.jpg",
-  "../images/attractionImages/attraction5-1.jpg", "../images/attractionImages/attraction5-2.jpg", "../images/attractionImages/attraction5-3.jpg",
-  "../images/attractionImages/attraction6-1.jpg", "../images/attractionImages/attraction6-2.jpg", "../images/attractionImages/attraction6-3.jpg",
-  "../images/attractionImages/attraction7-1.jpg", "../images/attractionImages/attraction7-2.jpg", "../images/attractionImages/attraction7-3.jpg",
-  "../images/attractionImages/attraction8-1.jpg", "../images/attractionImages/attraction8-2.jpg", "../images/attractionImages/attraction8-3.jpg"
+  "attraction1-1.jpg", "attraction1-2.jpg", "attraction1-3.jpg",
+  "attraction2-1.jpg", "attraction2-2.jpg", "attraction2-3.jpg",
+  "attraction3-1.jpg", "attraction3-2.jpg", "attraction3-3.jpg",
+  "attraction4-1.jpg", "attraction4-2.jpg", "attraction4-3.jpg",
+  "attraction5-1.jpg", "attraction5-2.jpg", "attraction5-3.jpg",
+  "attraction6-1.jpg", "attraction6-2.jpg", "attraction6-3.jpg",
+  "attraction7-1.jpg", "attraction7-2.jpg", "attraction7-3.jpg",
+  "attraction8-1.jpg", "attraction8-2.jpg", "attraction8-3.jpg"
 ];
 
 let currentIndex = 0;
@@ -208,14 +208,14 @@ function postReview(){
 //hotels list
 
 const hotelImages = [
-  ["../images/hotelImages/hotel1-1.jpg", "../images/hotelImages/hotel1-2.jpg", "../images/hotelImages/hotel1-3.jpg", "../images/hotelImages/hotel1-4.jpg"],
-  ["../images/hotelImages/hotel2-1.jpg", "../images/hotelImages/hotel2-2.jpg", "../images/hotelImages/hotel2-3.jpg", "../images/hotelImages/hotel2-4.jpg"],
-  ["../images/hotelImages/hotel3-1.jpg", "../images/hotelImages/hotel3-2.jpg", "../images/hotelImages/hotel3-3.jpg", "../images/hotelImages/hotel3-4.jpg"],
-  ["../images/hotelImages/hotel4-1.jpg", "../images/hotelImages/hotel4-2.jpg", "../images/hotelImages/hotel4-3.jpg", "../images/hotelImages/hotel4-4.jpg"],
-  ["../images/hotelImages/hotel5-1.jpg", "../images/hotelImages/hotel5-2.jpg", "../images/hotelImages/hotel5-3.jpg", "../images/hotelImages/hotel5-4.jpg"],
-  ["../images/hotelImages/hotel6-1.jpg", "../images/hotelImages/hotel6-2.jpg", "../images/hotelImages/hotel6-3.jpg", "../images/hotelImages/hotel6-4.jpg"],
-  ["../images/hotelImages/hotel7-1.jpg", "../images/hotelImages/hotel7-2.jpg", "../images/hotelImages/hotel7-3.jpg", "../images/hotelImages/hotel7-4.jpg"],
-  ["../images/hotelImages/hotel8-1.jpg", "../images/hotelImages/hotel8-2.jpg", "../images/hotelImages/hotel8-3.jpg", "../images/hotelImages/hotel8-4.jpg"]
+  ["hotel1-1.jpg", "hotel1-2.jpg", "hotel1-3.jpg", "hotel1-4.jpg"],
+  ["hotel2-1.jpg", "hotel2-2.jpg", "hotel2-3.jpg", "hotel2-4.jpg"],
+  ["hotel3-1.jpg", "hotel3-2.jpg", "hotel3-3.jpg", "hotel3-4.jpg"],
+  ["hotel4-1.jpg", "hotel4-2.jpg", "hotel4-3.jpg", "hotel4-4.jpg"],
+  ["hotel5-1.jpg", "hotel5-2.jpg", "hotel5-3.jpg", "hotel5-4.jpg"],
+  ["hotel6-1.jpg", "hotel6-2.jpg", "hotel6-3.jpg", "hotel6-4.jpg"],
+  ["hotel7-1.jpg", "hotel7-2.jpg", "hotel7-3.jpg", "hotel7-4.jpg"],
+  ["hotel8-1.jpg", "hotel8-2.jpg", "hotel8-3.jpg", "hotel8-4.jpg"]
 ];
 
 let currentHotelIndices = new Array(hotelImages.length).fill(0);
@@ -445,7 +445,7 @@ function displayUserInfo(){
     `;
   } else {
     document.getElementById("info").innerHTML = `
-    <p> No user information found. Please <a href = '../html/login.html'> Login </a></p>
+    <p> No user information found. Please <a href = 'login.html'> Login </a></p>
     `;
   }
 }
@@ -472,7 +472,7 @@ function login(){
 
 function logout(){
   localStorage.removeItem("user");
-  window.location.href = "../html/login.html";
+  window.location.href = "login.html";
 }
 
 //sign up system
@@ -501,8 +501,8 @@ function showLoginPopup(){
   popup.innerHTML = `
   <div class = "popup-content">
   <p> You need to login to access your profile. </p>
-  <button onclick = "window.location.href = '../html/login.html'"> Login </button>
-  <button onclick = "window.location.href = '../html/signup.html'"> Sign Up </button>
+  <button onclick = "window.location.href = 'login.html'"> Login </button>
+  <button onclick = "window.location.href = 'signup.html'"> Sign Up </button>
   <button onclick = "closePopup()"> Close </button>
   <div>
   `;
