@@ -13,7 +13,7 @@ function createDropdownMenu(){
     <div class = "dropdown">
         <button class = "dropbtn"> Menu </button>
         <div class = "dropdown-content">
-            <a href = '../html/index.html'> Home </a>
+            <a href = 'index.html'> Home </a>
             <a href = '../html/attractions.html'> Attractions </a>
             <a href = '../html/hotels.html'> Hotels </a>
             <a href = '../html/weather.html'> Weather </a>
